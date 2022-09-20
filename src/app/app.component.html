@@ -1,0 +1,7 @@
+<hello #child (countChanged)="countChangedHandlerEvent($event)"></hello>
+<p>Start editing to see some magic happen :)</p>
+<h3>{{ child.dummyData() }}</h3>
+<!-- <h4>{{ child.buttonCount() }}</h4> -->
+<h4>{{ count }}</h4>
+<button (click)="child.buttonClick()">Click</button>
+<button (click)="childIncrement()">Click</button>
