@@ -2,6 +2,8 @@
 <p>Start editing to see some magic happen :)</p>
 <h3>{{ child.dummyData() }}</h3>
 <!-- <h4>{{ child.buttonCount() }}</h4> -->
-<h4>{{ count }}</h4>
-<button (click)="child.buttonClick()">Click</button>
-<button (click)="childIncrement()">Click</button>
+<h4>Clicks: {{ count }}</h4>
+<button (click)="child.buttonClick()">Click increment in child</button>
+<button (click)="childIncrement()">
+  Click increment in parent through child
+</button>
